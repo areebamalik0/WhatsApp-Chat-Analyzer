@@ -73,27 +73,33 @@ cd whatsapp-chat-analyzer
 pip install pandas nltk joblib scikit-learn matplotlib emoji streamlit
 ```
 
-### 3. Update File Paths
 
-Before running the project, update the file paths in `toxicity_model.py`.
+### 3. Dataset Setup and File Paths
 
-Replace:
+This project uses the **Jigsaw Toxic Comment Classification Challenge dataset** from Kaggle:
 
-```python
-C:/Users/SystemUsername/Desktop/WhatsApp Chat Analyzer/
-```
+https://www.kaggle.com/datasets/julian3833/jigsaw-toxic-comment-classification-challenge
 
-with the location where you have stored the project on your system.
+The dataset contains multiple files, but **only `train.csv` is used** for training the model.
 
-Also ensure that the path to:
+After downloading the dataset:
 
-```text
+1. Extract the files
+2. Place only `train.csv` into the project folder under:
+
 csv files/train.csv
-```
 
-matches its location on your computer.
+OR update the path inside `toxicity_model.py` accordingly.
 
 ---
+
+Before running the project, also ensure that file paths in `toxicity_model.py` match your local system setup.
+
+If needed, replace absolute paths like:
+
+C:/Users/SystemUsername/Desktop/WhatsApp Chat Analyzer/
+
+with your actual project directory path.
 
 ## **Training the Toxicity Model**
 
