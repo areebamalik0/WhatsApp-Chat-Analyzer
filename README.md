@@ -47,8 +47,7 @@ WhatsApp Chat Analyzer/
 ├── toxicity_model.py
 ├── whatsapp.png
 │
-├── csv files/
-│   └── train.csv
+├──  train.csv 
 │
 ├── toxicity_model.pkl        (Generated after training)
 ├── toxicity_vectorizer.pkl   (Generated after training)
