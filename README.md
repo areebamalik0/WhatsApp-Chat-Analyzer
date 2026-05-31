@@ -101,6 +101,8 @@ C:/Users/SystemUsername/Desktop/WhatsApp Chat Analyzer/
 
 with your actual project directory path.
 
+---
+
 ## **Training the Toxicity Model**
 
 Run the following command:
