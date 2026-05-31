@@ -43,7 +43,7 @@ Using Machine Learning and Natural Language Processing (NLP), the application pe
 ```text
 WhatsApp Chat Analyzer/
 │
-├── app.py
+├── App.py
 ├── toxicity_model.py
 ├── whatsapp.png
 │
@@ -124,7 +124,7 @@ These files are required for the application to function correctly.
 Start the Streamlit application using:
 
 ```bash
-streamlit run app.py
+streamlit run App.py
 ```
 
 After the application launches in your browser:
