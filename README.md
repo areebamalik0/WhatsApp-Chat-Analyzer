@@ -2,26 +2,26 @@
 
 ## **Overview**
 
-WhatsApp Chat Analyzer is an AI-based application written in Python that analyzes exported WhatsApp chats and provides useful insights about conversations. The application supports direct messages (DMs), group chats, and communities exported as `.txt` files.
+WhatsApp Chat Analyzer is an AI-powered application developed in Python that analyzes exported WhatsApp chats and provides meaningful insights about conversations. The application supports direct messages (DMs), group chats, and communities exported as `.txt` files.
 
-The project uses a Machine Learning model for toxicity detection and Natural Language Processing (NLP) techniques for sentiment analysis.
+Using Machine Learning and Natural Language Processing (NLP), the application performs toxicity detection, sentiment analysis, and chat activity analysis through an interactive Streamlit interface.
 
 ---
 
 ## **Features**
 
-* Identify the most active user in the chat
-* Find the most frequently used word
-* Find the most frequently used emoji
-* Calculate toxicity percentage
-* Calculate non-toxicity percentage
-* Perform sentiment analysis
+* Most active user detection
+* Most frequently used word analysis
+* Most frequently used emoji analysis
+* Toxicity percentage calculation
+* Non-toxicity percentage calculation
+* Sentiment analysis
 
-  * Positive percentage
-  * Negative percentage
-  * Neutral percentage
-* Display graphical representations of the analysis
-* User-friendly interface built with Streamlit
+  * Positive messages percentage
+  * Negative messages percentage
+  * Neutral messages percentage
+* Graphical visualization of chat statistics
+* Interactive web interface built with Streamlit
 
 ---
 
@@ -46,38 +46,19 @@ WhatsApp Chat Analyzer/
 ├── app.py
 ├── toxicity_model.py
 ├── whatsapp.png
+│
+├── csv files/
+│   └── train.csv
+│
 ├── toxicity_model.pkl        (Generated after training)
 ├── toxicity_vectorizer.pkl   (Generated after training)
+│
 └── README.md
 ```
 
 ---
 
-## **Important Note**
-
-The repository does **not** include:
-
-* `toxicity_model.pkl`
-* `toxicity_vectorizer.pkl`
-* Training dataset (`train.csv`)
-
-Users must train the model themselves by running `toxicity_model.py`.
-
-Before running the project, replace all file paths in `toxicity_model.py` with the correct paths on your system.
-
-Example:
-
-```python
-C:/Users/SystemUsername/Desktop/WhatsApp Chat Analyzer/
-```
-
-Replace `SystemUsername` with your own Windows username and adjust the remaining path according to where your project files are stored.
-
-You must also update the path of `train.csv` to match its location on your system.
-
----
-
-## **Installation**
+## **Setup Instructions**
 
 ### 1. Clone the Repository
 
@@ -92,15 +73,31 @@ cd whatsapp-chat-analyzer
 pip install pandas nltk joblib scikit-learn matplotlib emoji streamlit
 ```
 
-### 3. Download the Dataset
+### 3. Update File Paths
 
-Download the toxicity dataset and update its path inside `toxicity_model.py`.
+Before running the project, update the file paths in `toxicity_model.py`.
+
+Replace:
+
+```python
+C:/Users/SystemUsername/Desktop/WhatsApp Chat Analyzer/
+```
+
+with the location where you have stored the project on your system.
+
+Also ensure that the path to:
+
+```text
+csv files/train.csv
+```
+
+matches its location on your computer.
 
 ---
 
-## **Training the Model**
+## **Training the Toxicity Model**
 
-Run:
+Run the following command:
 
 ```bash
 python toxicity_model.py
@@ -111,19 +108,23 @@ This will generate:
 * `toxicity_model.pkl`
 * `toxicity_vectorizer.pkl`
 
-These files must be present in the project folder before running the application.
+These files are required for the application to function correctly.
 
 ---
 
 ## **Running the Application**
 
-Run:
+Start the Streamlit application using:
 
 ```bash
 streamlit run app.py
 ```
 
-Then upload an exported WhatsApp `.txt` chat file to begin analysis.
+After the application launches in your browser:
+
+1. Export a WhatsApp chat as a `.txt` file.
+2. Upload the exported chat.
+3. View the generated analysis and visualizations.
 
 ---
 
@@ -131,20 +132,20 @@ Then upload an exported WhatsApp `.txt` chat file to begin analysis.
 
 Currently, the application supports **English-language chats only**.
 
-Chats containing mostly non-English text may not produce accurate results.
+Chats containing mostly non-English text may not produce accurate results because the toxicity and sentiment analysis models are designed for English text.
 
 ---
 
-## **Future Improvements**
+## **Future Enhancements**
 
 * Multi-language support
 * Word cloud generation
 * Additional chat statistics
 * Improved toxicity classification
-* Enhanced visualizations
+* Advanced visual analytics
 
 ---
 
 ## **License**
 
-This project is released under the MIT License.
+This project is licensed under the MIT License.
