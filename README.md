@@ -135,6 +135,13 @@ After the application launches in your browser:
 
 ---
 
+## Screenshots
+
+![Chat Statistics]assets/screenshot 1.png)
+![Detailed Analysis](assets/screenshot 2.png)
+
+---
+
 ## **Supported Language**
 
 Currently, the application supports **English-language chats only**.
