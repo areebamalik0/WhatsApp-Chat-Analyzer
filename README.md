@@ -137,8 +137,8 @@ After the application launches in your browser:
 
 ## Screenshots
 
-![Chat Statistics]assets/screenshot 1.png)
-![Detailed Analysis](assets/screenshot 2.png)
+![Chat Statistics]assets/screenshot 1.PNG)
+![Detailed Analysis](assets/screenshot 2.PNG)
 
 ---
 
