@@ -8,6 +8,11 @@ Using Machine Learning and Natural Language Processing (NLP), the application pe
 
 ---
 
+![Chat Statistics](assets/screenshot1.PNG)
+![Detailed Analysis](assets/screenshot2.PNG)
+
+---
+
 ## **Features**
 
 * Most active user detection
@@ -132,13 +137,6 @@ After the application launches in your browser:
 1. Export a WhatsApp chat as a `.txt` file.
 2. Upload the exported chat.
 3. View the generated analysis and visualizations.
-
----
-
-## Screenshots
-
-![Chat Statistics](assets/screenshot1.PNG)
-![Detailed Analysis](assets/screenshot2.PNG)
 
 ---
 
