@@ -107,23 +107,6 @@ with your actual project directory path.
 
 ---
 
-## **Training the Toxicity Model**
-
-Run the following command:
-
-```bash
-python toxicity_model.py
-```
-
-This will generate:
-
-* `toxicity_model.pkl`
-* `toxicity_vectorizer.pkl`
-
-These files are required for the application to function correctly.
-
----
-
 ## **Running the Application**
 
 Start the Streamlit application using:
